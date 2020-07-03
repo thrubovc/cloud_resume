@@ -3,4 +3,4 @@
 <br>
 This is my cloud resume frontend repository. It holds the website code.
 <br>
-You can find my cloud resume [here](https://resume.tomasko.eu)
+You can find my cloud resume at [resume.tomasko.eu](https://resume.tomasko.eu)
