@@ -1,0 +1,128 @@
+
+html{
+  font-family: 'Tenor Sans',sans-serif;
+}
+hr{
+    background: grey;
+}
+#sidebar{
+    position: relative;
+    display: flex;
+    max-width: 800px;
+}
+#profile{
+    flex: 15%;
+    display: block;
+    position: relative;
+    margin: 5% 2% 0 10%;
+    width: 100%;
+    height: 100%;
+}
+#info-pages{
+    flex: 55%;
+    display: block;
+    margin-top: 5%;
+    margin-right: 10%;
+    width: 100%;
+    height: 100%;
+}
+#image{
+    position: relative;
+    overflow: hidden;
+}
+#image,#profile-photo{
+    position: relative;
+    width: 220px;
+    height: 205px;
+    border-radius: 20px;
+}
+#name{
+    font-size: 25px;
+    line-height: 20px;
+}
+#email{
+    font-size: 15px !important;
+    font-weight: bold;
+    font-family: 'Cutive Mono', Courier, monospace;
+}
+#description,#email{
+    color: #555;
+    font-size: 13.5px;
+}
+span{
+    color: black;
+    font-size: 16px;
+}
+.page > ul > li{
+    padding: 0 0 0 15px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.page{
+    box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.75);
+    overflow-x: hidden;
+    margin-bottom: 30px;
+    padding: 15px 30px 30px 30px;
+    background-color: #fff;
+}
+.page > p{
+    color: #0e141e;
+    font-size: 18px;
+    line-height: 2;
+}
+.page > p > i{
+    font-size: 18px;
+}
+.page > ul{
+    list-style-type: none;
+}
+.tag{
+    font-size: 17px;
+}
+.tag span{
+    font-size: 14px;
+    color: #0e141e;
+}
+.tag span span{
+    color: #738f93;
+}
+@media screen and (max-width:1090px){
+    #profile{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:850px){
+    #sidebar{
+        display: block;
+    }
+    #profile{
+        width: 90%;
+    }
+    .page{
+        margin: 0 5%;
+        margin-bottom: 30px;
+    }
+}
+#skill {
+  display:inline;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px !important;
+  background: #d1d1d1;
+  padding: 2px;
+  border-radius: 4px;
+}
+#skill:hover {
+  background-color: #b8b8b8;
+}
+#skill-stronger {
+  display:inline;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px !important;
+  background: #b8b8b8;
+  padding: 3px;
+  border-radius: 5px;
+}
+#skill-stronger:hover {
+  background-color: #a3a3a3;
+}
