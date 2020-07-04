@@ -41,11 +41,12 @@ hr{
     line-height: 20px;
 }
 #email{
-    font-size: 15px !important;
+    font-size: 15px;
     font-weight: bold;
+    color: #555;
     font-family: 'Cutive Mono', Courier, monospace;
 }
-#description,#email{
+#description{
     color: #555;
     font-size: 13.5px;
 }
