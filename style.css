@@ -5,10 +5,9 @@ html{
 hr{
     background: grey;
 }
-#sidebar{
+#container{
     position: relative;
     display: flex;
-    max-width: 1300px;
 }
 #profile{
     flex: 15%;
@@ -88,7 +87,7 @@ span{
     }
 }
 @media screen and (max-width:850px){
-    #sidebar{
+    #container{
         display: block;
     }
     #profile{
