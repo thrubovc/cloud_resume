@@ -143,3 +143,9 @@ span{
 .social-link{
   text-decoration: none;
 }
+ul > li{
+  font-size: 14px;
+  list-style-type: disc;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
