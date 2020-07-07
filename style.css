@@ -132,8 +132,11 @@ hr{
     width: 40px;
     border-radius: 20px;
 }
-.social-link{
+.link{
   text-decoration: none;
+  color: #708090;
+  font-weight: bold;
+  font-family: 'Cutive Mono', Courier, monospace;
 }
 ul > li{
   font-size: 14px;
