@@ -140,3 +140,6 @@ span{
     width: 40px;
     border-radius: 20px;
 }
+.social-link{
+  text-decoration: none;
+}
