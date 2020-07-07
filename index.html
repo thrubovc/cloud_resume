@@ -98,8 +98,36 @@
 				<div class="page">
 					<p>&nbsp;&nbsp;&nbsp;Other projects</p>
 					<ul>
-						<li><p class="tag">homelab<br><span>cloud on raspberry pi | <span>2019</span></span></p></li>
+						<p class="tag">Home cloud<br><span>hosting several services at home | <span>2019-now</span></span></p>
+						<ul>
+							Setup:
+							<li>Nextcloud</li>
+							<li>Pihole - also doubles as an internal DNS server</li>
+							<li>RAID 1 array for data - on btrfs. automated nightly backups with snapshots</li>
+							<li>Nginx proxy for SSL offloading - that's what's proxying this website between you and my AWS S3 bucket</li>
+							<li>Soon to become the backup server for the main server</li>
+							<br>
+						</ul>
+						<p class="tag">Home Virtualization server<br><span>main server | <span>in build right now</span></span></p>
+						<ul>
+							Plans:
+							<li>ESXi (or Proxmox - to be decided) with SATA controller passthrough to FreeNas</li>
+							<li>FreeNas controlling a RAID 10 zfs pool</li>
+							<li>Home backup server</li>
+							<li>Several VMs with room to play with stuff</li>
+							<br>
+						</ul>
 					</ul>
+					<ul>
+						<p class="tag">This resume<br><span>inspired by <a href="https://cloudresumechallenge.dev" target="_blank" class="link">cloudresumechallenge.dev</a> | <span>in build right now</span></span></p>
+						<ul>
+							<li>Hosted on AWS S3</li>
+							<li>Code versioned on <a href="https://github.com/thrubovc/cloud_resume" target="_blank" class="link">github</a></li>
+							<li>Automatic deployment by AWS CodePipeline</li>
+						</ul>
+						<br>
+					</ul>
+				</ul>
 				</div>
 			</div>
 		</div>
