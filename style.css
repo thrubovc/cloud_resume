@@ -43,10 +43,6 @@ hr{
     color: #555;
     font-size: 14px;
 }
-span{
-    color: black;
-    font-size: 16px;
-}
 .page > ul > li{
     padding: 0 0 0 15px;
     position: relative;
