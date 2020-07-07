@@ -9,7 +9,7 @@ hr{
     position: relative;
     display: flex;
 }
-#profile{
+#sidebar{
     flex: 15%;
     display: block;
     position: relative;
@@ -75,7 +75,7 @@ hr{
     color: #738f93;
 }
 @media screen and (max-width:1090px){
-    #profile{
+    #sidebar{
         margin-left: 5%;
     }
 }
@@ -83,7 +83,7 @@ hr{
     #container{
         display: block;
     }
-    #profile{
+    #sidebar{
         width: 90%;
     }
     .page{
