@@ -144,3 +144,11 @@ ul > li{
   line-height: 20px;
   font-family: 'Open Sans', sans-serif;
 }
+.counter{
+  font-size: 14px;
+  color: #545454;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  padding-bottom: 3em
+}
