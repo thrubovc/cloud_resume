@@ -110,12 +110,13 @@
 							<li>Soon to become the backup server for the main server</li>
 							<br>
 						</ul>
-						<p class="tag">Home Virtualization server<br><span>main server | <span>in build right now</span></span></p>
+						<p class="tag">Home Virtualization server<br><span>main server | <span>2020</span></span></p>
 						<ul>
-							Plans:
-							<li>ESXi (or Proxmox - to be decided) with SATA controller passthrough to FreeNas</li>
+							<li>Proxmox hypervior with SATA controller passthrough to FreeNas</li>
 							<li>FreeNas controlling a RAID 10 zfs pool</li>
-							<li>Home backup server</li>
+							<li>Home storage&amp;backup server</li>
+							<li>Internal DNS server</li>
+							<li>TLS proxy for the entire domain, including this resume</li>
 							<li>Several VMs with room to play with stuff</li>
 							<br>
 						</ul>
@@ -126,6 +127,8 @@
 							<li>Hosted on AWS S3</li>
 							<li>Code versioned on <a href="https://github.com/thrubovc/cloud_resume" target="_blank" class="link">github</a></li>
 							<li>Automatic deployment by AWS CodePipeline</li>
+							<li>Javascript visitor counter</li>
+							<li>API Gateway, Lambda and DynamoDB setup that log visitors</li>
 						</ul>
 						<br>
 					</ul>
