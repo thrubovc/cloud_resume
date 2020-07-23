@@ -105,21 +105,25 @@
 						<p class="tag">Home cloud<br><span>hosting several services at home | <span>2019-now</span></span></p>
 						<ul>
 							Setup:
-							<li>Nextcloud</li>
-							<li>Pihole - also doubles as an internal DNS server</li>
-							<li>RAID 1 array for data - on btrfs. automated nightly backups with snapshots</li>
-							<li>Nginx proxy for SSL offloading - that's what's proxying this website between you and my AWS S3 bucket</li>
-							<li>All in containers and docker-compose</li>
-							<li>Soon to become the backup server for the main server</li>
+							<li style="text-decoration: line-through">Nextcloud</li>
+							<li style="text-decoration: line-through">Pihole - also doubles as an internal DNS server</li>
+							<li style="text-decoration: line-through">RAID 1 array for data - on btrfs. automated nightly backups with snapshots</li>
+							<li style="text-decoration: line-through">Nginx proxy for SSL offloading - that's what's proxying this website between you and my AWS S3 bucket</li>
+							<li style="text-decoration: line-through">All in containers and docker-compose</li>
+							<li style="text-decoration: line-through">Soon to become the backup server for the main server</li>
+							<li>Backup server for the hypervisor</li>
+							<li>zfs RAID 1 array</li>
 							<br>
 						</ul>
 						<p class="tag">Home Virtualization server<br><span>main server | <span>2020</span></span></p>
 						<ul>
 							<li>Proxmox hypervior with SATA controller passthrough to FreeNas</li>
 							<li>FreeNas controlling a RAID 10 zfs pool</li>
+							<li>zfs snapshots backed up to the backup server</li>
 							<li>Home storage&amp;backup server</li>
 							<li>Internal DNS server</li>
-							<li>TLS proxy for the entire domain, including this resume</li>
+							<li>TLS proxy for the domain and subdomains including this resume</li>
+							<li>Monitored with Prometheus&amp;Grafana</li>
 							<li>Several VMs with room to play with stuff</li>
 							<br>
 						</ul>
