@@ -124,12 +124,17 @@ hr{
     text-decoration: none;
     font-family: 'Cutive Mono', Courier, monospace;
 }
-#reach-me,#skills{
+#sidepanel-section-title{
   line-height: 30px;
 }
-#linkedin,#github{
+#social-thumbnail{
     position: relative;
     width: 40px;
+    border-radius: 20px;
+}
+#cert-thumbnail{
+    position: relative;
+    width: 100px;
     border-radius: 20px;
 }
 .link{
