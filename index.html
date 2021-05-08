@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<title>Tomas Hrubovcak - Resume</title>
-			<link rel="stylesheet" type="text/css" href="style.css">
-			<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" type="text/css"/>
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" type="text/css"/>
-			<script type="text/javascript" src="visitor_counter.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" type="text/css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" type="text/css"/>
+		<script type="text/javascript" src="get_apis.js" defer></script>
 	</head>
+
 	<body>
 		<div id="container">
 			<div id="sidebar">
@@ -14,18 +15,18 @@
 					<img id="profile-photo" src="profile_picture.jpg" alt="Profile-Image">
 				</div>
 				<p id="name">Tomas Hrubovcak<br></p>
-				<p>DevOps and Linux engineer<br><span id="description">with a solid history of various unix/linux distros.<br>Enthusiastic for learning new things, especially relevant technologies of today/tomorrow.<br>Automation lover.</span></p>
+				<p>DevOps and infrastructure engineer<br><span id="description">I like building services and solutions architecture in public cloud.<br>I like being part of dynamic projects where I can make a difference and learn a lot of new stuff.</span></p>
 				<hr width="100%">
 				<div id="skills">
 					<p style="display:inline;">Skills</p><br>
 					<p id="skill-stronger">Zabbix</p>
 					<p id="skill">MySQL</p>
-					<p id="skill-stronger">DevOps</p>
-					<p id="skill">PostgreSQL</p>
 					<p id="skill-stronger">Linux</p>
 					<p id="skill-stronger">Ansible</p>
+					<p id="skill">PostgreSQL</p>
 					<p id="skill-stronger">Azure</p>
 					<p id="skill-stronger">Azure DevOps</p>
+					<p id="skill">Jenkins</p>
 					<p id="skill-stronger">AWS</p>
 					<p id="skill">Jenkins</p>
 					<p id="skill-stronger">Prometheus</p>
@@ -33,7 +34,6 @@
 					<p id="skill">SQL</p>
 					<p id="skill-stronger">Docker</p>
 					<p id="skill-stronger">Git</p>
-					<p id="skill-stronger">Agile</p>
 					<p id="skill">python</p>
 					<p id="skill-stronger">Terraform</p>
 					<p id="skill-stronger">git</p>
@@ -78,7 +78,8 @@
 					<ul>
 						<p class="tag">Ness KDC<br><span>Senior DevOps engineer | <span>2020-now</span></span></p>
 						<ul>
-							<li>building serverless services in Azure from ground up</li>
+							<li>building microservices in Azure from ground up</li>
+							<li>assigned to 2 dev squads with services on Azure and AWS</li>
 							<br>
 						</ul>
 						<p class="tag">IBM<br><span>DevOps engineer | <span>2016-2020</span></span></p>
@@ -95,9 +96,8 @@
 						<p class="tag">T-Systems<br><span>SAP Basis Administrator | <span>2014-2016</span></span></p>
 						<ul>
 							<li>Administration of SAP ABAP and portal systems and Oracle/Informix databases</li>
-							<br>
 						</ul>
-						<p class="tag">T-Systems<br><span>Unix L2 and L3 support | <span>2008-2014</span></span></p>
+						<p class="tag"><span>Unix L2 and L3 support | <span>2008-2014</span></span></p>
 						<ul>
 							<li>Linux and HP-UX server administration, responsibility for L2 and L3 support tasks</li>
 							<li>Basic network configuration</li>
@@ -116,7 +116,15 @@
 				</div>
 				<div class="page">
 					<p>&nbsp;&nbsp;&nbsp;Other projects</p>
+					<div style="float: right">Current temperature is <a id="temp"></a>&#8451;&nbsp;&nbsp;&nbsp;</div>
 					<ul>
+						<p class="tag">Weather station<br><span>just for fun | <span>2021</span></span></p>
+						<ul>
+							<li>Powered by a Raspberry pi zero and a BOSCH air quality module</li>
+							<li>Stuck outside my window in a tinfoil-covered chewing gum plastic box</li>
+							<li>Data exported by Prometheus and gathered on my server</li>
+							<li>With the API published so that this web page can now show the temperature in real time</li>
+						</ul>
 						<p class="tag">Home Virtualization server<br><span>main server | <span>2020-now</span></span></p>
 						<ul>
 							<li>Proxmox hypervior</li>
@@ -129,20 +137,6 @@
 							<li>Several VMs with room to play with stuff</li>
 							<br>
 						</ul>
-						<br>
-						<p class="tag">Raspberry pi<br><span>self-hosting services | <span>2019-2020</span></span></p>
-						<ul>
-							Setup:
-							<li style="text-decoration: line-through">Nextcloud</li>
-							<li style="text-decoration: line-through">Pihole - also doubles as an internal DNS server</li>
-							<li style="text-decoration: line-through">RAID 1 array for data - on btrfs. automated nightly backups with snapshots</li>
-							<li style="text-decoration: line-through">Nginx proxy for SSL offloading - that's what's proxying this website between you and my AWS S3 bucket</li>
-							<li style="text-decoration: line-through">All in containers and docker-compose</li>
-							<li style="text-decoration: line-through">Soon to become the backup server for the main server</li>
-							<li>Backup server for the hypervisor</li>
-							<li>btrfs RAID 1 array</li>
-							<br>
-						</ul>
 						<p class="tag">This resume<br><span>inspired by <a href="https://cloudresumechallenge.dev" target="_blank" class="link">cloudresumechallenge.dev</a> | <span>2020</span></span></p>
 						<ul>
 							<li>Hosted on AWS S3</li>
@@ -151,9 +145,14 @@
 							<li>Javascript visitor counter</li>
 							<li>API Gateway, Lambda and DynamoDB setup for the visitor counter</li>
 							<li>Cloudflare for caching and DNS challenge</li>
+							<br>
+						</ul>
+						<p class="tag">Raspberry pi<br><span>self-hosting beginnings | <span>2019-2020</span></span></p>
+						<ul>
+							<li>Initially it was used for hosting services like Nextcloud, Pihole, playing with automation...</li>
+							<li>Right now, it's used as a backup server for the hypervisor with the datastore on a btrfs RAID 1</li>
 						</ul>
 					</ul>
-				</ul>
 				</div>
 				<p class="counter">This page has been visited <a id="count"></a> times.</p>
 			</div>
